@@ -18,6 +18,11 @@ Removing records for some files from lcov file
 Filtered result is printed to STDOUT and can be piped to other tools, for example
 to send to coveralls.io
 
+## Example
+
+Pipe file *cover/lcov.info* and remove info for files that contain word *test* in the path,
+the output is then piped through [coveralls](https://github.com/cainus/node-coveralls) module
+
     node node_modules/lcov-filter/index.js cover/lcov.info test | ./node_modules/coveralls/bin/coveralls.js
 
 ## Why?
