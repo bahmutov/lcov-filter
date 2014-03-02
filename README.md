@@ -2,6 +2,12 @@
 
 Removing records for some files from lcov file
 
+[![NPM][lcov-filter-icon]][lcov-filter-url]
+
+[![Build status][lcov-filter-ci-image]][lcov-filter-ci-url]
+[![dependencies][lcov-filter-dependencies-image]][lcov-filter-dependencies-url]
+[![devdependencies][lcov-filter-devdependencies-image]][lcov-filter-devdependencies-url]
+
 ## Use
 
     npm install lcov-filter --save-dev
@@ -43,3 +49,12 @@ Author: Gleb Bahmutov &copy; 2014
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
 Support: if you find any problems with this module, email / tweet / open issue on Github
+
+[lcov-filter-icon]: https://nodei.co/npm/lcov-filter.png?downloads=true
+[lcov-filter-url]: https://npmjs.org/package/lcov-filter
+[lcov-filter-ci-image]: https://travis-ci.org/bahmutov/lcov-filter.png?branch=master
+[lcov-filter-ci-url]: https://travis-ci.org/bahmutov/lcov-filter
+[lcov-filter-dependencies-image]: https://david-dm.org/bahmutov/lcov-filter.png
+[lcov-filter-dependencies-url]: https://david-dm.org/bahmutov/lcov-filter
+[lcov-filter-devdependencies-image]: https://david-dm.org/bahmutov/lcov-filter/dev-status.png
+[lcov-filter-devdependencies-url]: https://david-dm.org/bahmutov/lcov-filter#info=devDependencies
