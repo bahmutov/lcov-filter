@@ -22,6 +22,5 @@
   },
   "homepage": "https://github.com/bahmutov/lcov-filter",
   "dependencies": {
-    "check-types": "~1.2.0"
   }
 }

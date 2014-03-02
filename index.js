@@ -1,13 +1,14 @@
-var verify = require('check-types').verify;
+#!/usr/bin/env node
+
 var inputFilename = process.argv[2];
-verify.unemptyString(inputFilename, 'missing input filename');
+console.assert(inputFilename, 'missing input filename');
 var filterString = process.argv[3];
-verify.unemptyString(filterString, 'missing filter string');
+console.assert(filterString, 'missing filter string');
 var filterRegExp = new RegExp(filterString, 'gi');
 
 var read = require('fs').readFileSync;
 var input = read(inputFilename, 'utf-8');
-verify.unemptyString(input, 'missing input from file ' + inputFilename);
+console.assert(input, 'missing input from file ' + inputFilename);
 
 var FILE_RECORD = 'TN:';
 
