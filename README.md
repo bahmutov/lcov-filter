@@ -28,7 +28,7 @@ the output is then piped through [coveralls](https://github.com/cainus/node-cove
 ## Why?
 
 I love testing and code coverage, and send coverage results
-to [coveralls.io](http://bahmutov.calepin.co/code-coverage-via-gt-and-coveralls.html),
+to [coveralls.io](http://glebbahmutov.com/blog/code-coverage-via-gt-and-coveralls/),
 which gives me nice badges. The problem is that sending combined code coverage for
 the soure code AND unit test code skews the average number upwards:
 
@@ -49,7 +49,7 @@ Author: Gleb Bahmutov &copy; 2014
 
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [blog](http://glebbahmutov.com/blog/)
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
