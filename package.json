@@ -24,6 +24,6 @@
   "pre-commit": "npm test",
   "dependencies": {},
   "devDependencies": {
-    "pre-git": "0.0.15"
+    "pre-git": "0.1.1"
   }
 }
