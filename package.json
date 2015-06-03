@@ -1,6 +1,6 @@
 {
   "name": "lcov-filter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Removes records for files matching given regexp from LCOV file or stream",
   "main": "index.js",
   "scripts": {
