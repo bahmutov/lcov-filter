@@ -1,10 +1,13 @@
 {
   "name": "lcov-filter",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Removes records for files matching given regexp from LCOV file or stream",
   "main": "index.js",
+  "bin": {
+    "lcov-filter": "bin/lcov-filter.js"
+  },
   "scripts": {
-    "test": "node index.js test/lcov.info test",
+    "test": "node bin/lcov-filter.js test/lcov.info test",
     "commit": "git-issues && commit-wizard",
     "issues": "git-issues",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
