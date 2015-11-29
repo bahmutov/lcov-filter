@@ -4,7 +4,8 @@
   "description": "Removes records for files matching given regexp from LCOV file or stream",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js test/lcov.info test"
+    "test": "node index.js test/lcov.info test",
+    "commit": "commit-wizard"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,19 @@
     "url": "https://github.com/bahmutov/lcov-filter/issues"
   },
   "homepage": "https://github.com/bahmutov/lcov-filter",
-  "pre-commit": "npm test",
   "dependencies": {},
   "devDependencies": {
-    "pre-git": "0.1.1"
+    "pre-git": "1.4.0"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [
+        "npm test"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
   }
 }
