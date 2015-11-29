@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
-// TODO use simple-bin-help
+require('simple-bin-help')({
+  minArguments: 4,
+  packagePath: __dirname +' /../package.json',
+  help: 'lcov-filter <input filename> <filter string>'
+});
 
 var inputFilename = process.argv[2];
 console.assert(inputFilename, 'missing input filename');
