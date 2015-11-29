@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js test/lcov.info test",
-    "commit": "commit-wizard"
+    "commit": "git-issues && commit-wizard",
+    "issues": "git-issues",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "homepage": "https://github.com/bahmutov/lcov-filter",
   "dependencies": {},
   "devDependencies": {
+    "git-issues": "1.2.0",
     "pre-git": "1.4.0"
   },
   "config": {
@@ -32,7 +35,9 @@
       "pre-commit": [
         "npm test"
       ],
-      "pre-push": [],
+      "pre-push": [
+        "npm run size"
+      ],
       "post-commit": [],
       "post-merge": []
     }
