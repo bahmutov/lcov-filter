@@ -25,6 +25,15 @@ the output is then piped through [coveralls](https://github.com/cainus/node-cove
 
     node node_modules/lcov-filter/index.js cover/lcov.info test | ./node_modules/coveralls/bin/coveralls.js
 
+It is better to use from a script command inside `package.json`, for example to send filtered data
+the the `coveralls.io` service
+
+```json
+"scripts": {
+  "coveralls": "lcov-filter cover/lcov.info test | ./node_modules/coveralls/bin/coveralls.js",
+}
+```
+
 ## Why?
 
 I love testing and code coverage, and send coverage results
