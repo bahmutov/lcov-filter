@@ -18,6 +18,10 @@
     "lcov",
     "filter"
   ],
+  "files": [
+    "bin",
+    "index.js"
+  ],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "bugs": {
